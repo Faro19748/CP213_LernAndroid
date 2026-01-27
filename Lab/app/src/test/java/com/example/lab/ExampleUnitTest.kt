@@ -1,4 +1,4 @@
-package com.example.a516_lab
+package com.example.lab
 
 import org.junit.Test
 
