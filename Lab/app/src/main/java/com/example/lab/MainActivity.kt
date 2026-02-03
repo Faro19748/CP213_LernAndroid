@@ -53,11 +53,8 @@ class MainActivity : ComponentActivity() {
 // hp
 
                 Box(modifier = Modifier
-
                     .height(32.dp)
-
                     .background(color = Color.White)
-
                     .fillMaxWidth()
 
 
@@ -65,21 +62,13 @@ class MainActivity : ComponentActivity() {
 
 
                 ){
-
                     Text(
-
                         text = "HP",
-
                         modifier = Modifier
-
                             .align(alignment = Alignment.CenterStart)
-
                             .fillMaxWidth(fraction = 0.10f)
-
                             .background(color = Color.Red)
-
                             .padding(8.dp)
-
                     )
 
                 }
@@ -89,15 +78,10 @@ class MainActivity : ComponentActivity() {
                 Image(
 
                     painter = painterResource(id = R.drawable.peter),
-
                     contentDescription = "Porfile",
-
                     modifier = Modifier
-
                         .size(size = 400.dp)
-
                         .align(Alignment.CenterHorizontally)
-
                         .padding(top = 32.dp)
 
 
@@ -124,37 +108,33 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Absolute.SpaceAround
 
+
+
                 ){
 
                     Column {
                         Button(onClick = {
                             STR = STR + 1
-
                         }) {
                             Text(text = "+", fontSize = 32.sp)
-
                         }
                         Text(text = "STR", fontSize = 32.sp)
                         Text(text = STR.toString(), fontSize = 32.sp)
-
-
-
                     }
+
+
 
                     Column {
                         Button(onClick = {
                             AGI = AGI + 1
-
                         }) {
                             Text(text = "+", fontSize = 32.sp)
-
                         }
                         Text(text = "AGI", fontSize = 32.sp)
                         Text(text = AGI.toString(), fontSize = 32.sp)
-
-
-
                     }
+
+
 
                     Column {
 
@@ -164,29 +144,28 @@ class MainActivity : ComponentActivity() {
                             Text(text = "+", fontSize = 32.sp)
                         }
                         Text(text = "DEF", fontSize = 32.sp)
-
                         Text(text = DEF.toString(), fontSize = 32.sp)
-
-
-
                     }
+
+
 
                     Column {
                         Button(onClick = {
                             INT = INT + 1
-                            isClicked = true // เปลี่ยนสถานะเมื่อกด
                         }) {
                             Text(text = "+", fontSize = 32.sp)
                         }
                         Text(text = "INT", fontSize = 32.sp)
-
-                        // เช็คว่าถ้ากดแล้วให้แสดง HI ถ้ายังไม่กดให้แสดงตัวเลข
-                        if (isClicked) {
-                            Text(text = "HI", fontSize = 32.sp)
+                        if (INT > -2) {
+                            Text(text = "cant up Int", fontSize =28.sp, color = Color.Red)
                         } else {
                             Text(text = INT.toString(), fontSize = 32.sp)
+
                         }
+
                     }
+
+
 
                 }
 
