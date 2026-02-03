@@ -6,7 +6,7 @@ plugins {
 android {
     namespace = "com.example.lab"
     compileSdk {
-        version = release(35)
+        version = release(36)
     }
 
     defaultConfig {
