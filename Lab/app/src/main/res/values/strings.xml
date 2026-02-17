@@ -8,4 +8,5 @@
     <string name="title_activity_counter_view_model">CounterViewModel</string>
     <string name="title_activity_counter_intent">CounterIntent</string>
     <string name="title_activity_counter_state">CounterState</string>
+    <string name="title_activity_shared_preferences">SharedPreferencesActivity</string>
 </resources>
