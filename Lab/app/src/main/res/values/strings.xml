@@ -9,4 +9,5 @@
     <string name="title_activity_counter_intent">CounterIntent</string>
     <string name="title_activity_counter_state">CounterState</string>
     <string name="title_activity_shared_preferences">SharedPreferencesActivity</string>
+    <string name="title_activity_pokemon_api">PokemonApi</string>
 </resources>

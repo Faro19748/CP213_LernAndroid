@@ -1,14 +1,11 @@
 package com.example.lab.utils
 
+
 import android.content.Context
 import android.content.SharedPreferences
 
-/**
- * SharedPreferencesUtil: เครื่องมือช่วยจัดการการเก็บข้อมูลขนาดเล็กในเครื่อง
- * เหมาะสำหรับ: เก็บสถานะ Login, การตั้งค่า App, หรือคะแนนเกมเบื้องต้น
- */
-object SharedPreferencesUtil {
 
+object SharedPreferencesUtils {
     private const val PREF_NAME = "my_app_prefs"
     private var sharedPreferences: SharedPreferences? = null
 

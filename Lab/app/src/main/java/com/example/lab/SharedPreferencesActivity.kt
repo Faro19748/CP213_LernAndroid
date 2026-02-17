@@ -12,18 +12,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.lab.ui.theme.LabTheme
-import com.example.lab.utils.SharedPreferencesUtil
+import com.example.lab.utils.SharedPreferencesUtils
 
 class SharedPreferencesActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        SharedPreferencesUtil.init(context = this)
+        SharedPreferencesUtils.init(context = this)
 
-        SharedPreferencesUtil.saveString("User_name", "Theeraphat")
-        SharedPreferencesUtil.saveBoolean("Is_dark_Mode", true)
+        SharedPreferencesUtils.saveString("User_name", "Theeraphat")
+        SharedPreferencesUtils.saveBoolean("Is_dark_Mode", true)
 
-        val name = SharedPreferencesUtil.getString(key = "User_name")
-        val darkMode = SharedPreferencesUtil.getBoolean(key = "IS_dark_Mode")
+        val name = SharedPreferencesUtils.getString(key = "User_name")
+        val darkMode = SharedPreferencesUtils.getBoolean(key = "IS_dark_Mode")
 
 
 
