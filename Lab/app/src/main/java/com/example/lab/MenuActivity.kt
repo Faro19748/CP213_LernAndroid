@@ -32,7 +32,7 @@ class MenuActivity : ComponentActivity() {
                             val intent = Intent(this@MenuActivity, RPGcardActivity::class.java)
                             startActivity(intent)
                         }) {
-                            Text("Go to Main Activity")
+                            Text("Go to Main Activity u")
                         }
                     }
                 }
